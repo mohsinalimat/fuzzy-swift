@@ -16,10 +16,10 @@ search(needle: "mtt", haystack: "matchme") # false
 
 ## SwiftPM
 
+To use Apple's Swift package manager, add this line to your `Package.swift`
+
 ```swift
-dependencies: [
 .package(url: "https://github.com/khoi/fuzzy-swift", from: "0.1.0")
-]
 ```
 
 ## 📜 License
