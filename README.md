@@ -4,7 +4,11 @@
 [![CircleCI](https://circleci.com/gh/khoi/fuzzy-swift.svg?style=svg)](https://circleci.com/gh/khoi/fuzzy-swift)
 [![@khoiracle](https://img.shields.io/badge/contact-@khoiracle-4bbee3.svg?style=flat)](https://twitter.com/khoiracle)
 
-Simple and fast "fuzzy" string matching.
+Simple and fast "fuzzy" string matching. Can be used to implement Sublime Text-like search
+
+![Demo](https://github.com/khoi/fuzzy-swift-example/raw/master/demo.gif)
+
+See [Example Project](https://github.com/khoi/fuzzy-swift-example)
 
 ## Usage
 
