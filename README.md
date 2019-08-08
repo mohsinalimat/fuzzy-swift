@@ -1,4 +1,4 @@
-# 🔍 Fuzzy Search
+# 🔍 fuzzy-swift
 
 [![Swift 5](https://img.shields.io/badge/swift-5-ED523F.svg?style=flat)](https://swift.org/download/)
 [![CircleCI](https://circleci.com/gh/khoi/fuzzy-swift.svg?style=svg)](https://circleci.com/gh/khoi/fuzzy-swift)
