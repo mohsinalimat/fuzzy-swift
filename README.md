@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/khoi/fuzzy-swift.svg?style=svg)](https://circleci.com/gh/khoi/fuzzy-swift)
 [![@khoiracle](https://img.shields.io/badge/contact-@khoiracle-4bbee3.svg?style=flat)](https://twitter.com/khoiracle)
 
-Simple fast "fuzzy" string matching.
+Simple and fast "fuzzy" string matching.
 
 ## Usage
 
@@ -13,6 +13,14 @@ search(needle: "ab", haystack: "asdfbwe") # true
 search(needle: "mtme", haystack: "matchme") # true
 search(needle: "mtt", haystack: "matchme") # false
 ``` 
+
+## SwiftPM
+
+```swift
+dependencies: [
+.package(url: "https://github.com/khoi/fuzzy-swift", from: "0.1.0")
+]
+```
 
 ## 📜 License
 MIT
