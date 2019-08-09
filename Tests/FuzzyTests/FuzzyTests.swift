@@ -19,6 +19,26 @@ final class FuzzyTests: XCTestCase {
       XCTAssertEqual(search(needle: "bò gà", haystack: "bún bò phở gà"), true)
       XCTAssertEqual(search(needle: "bò go", haystack: "bún bò phở gà"), false)
     }
+  
+  func testPerformance() {
+    measure {
+      _ = search(needle: "", haystack: "matchme")
+      _ = search(needle: "ma", haystack: "matchme")
+      _ = search(needle: "mtme", haystack: "matchme")
+      _ = search(needle: "mtchme", haystack: "matchme")
+      _ = search(needle: "matchme", haystack: "matchme")
+
+      _ = search(needle: "matchmematchme", haystack: "matchme")
+      _ = search(needle: "matchma", haystack: "matchme")
+      _ = search(needle: "🙈", haystack: "matchme")
+      _ = search(needle: "matchó", haystack: "matchme")
+      _ = search(needle: "emhctam", haystack: "matchme")
+
+      _ = search(needle: "bò", haystack: "bún bò phở gà")
+      _ = search(needle: "bò gà", haystack: "bún bò phở gà")
+      _ = search(needle: "bò go", haystack: "bún bò phở gà")
+    }
+  }
 
     static var allTests = [
         ("testSearch", testSearch),
